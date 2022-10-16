@@ -1,6 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: #F5F4FA;
+    font-style: normal;
+    color: #212121;
+    background: #F5F5F5;;
 }
 
 a {
@@ -11,7 +13,12 @@ a {
     list-style: none;
 }
 
-/* Верхня лінія */
+/* Шапка */
+
+header {
+    background-color: #FFFFFF;
+}
+
 /* Лого */
 
 .logo {
@@ -19,7 +26,7 @@ a {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     
     letter-spacing: 0.03em;
 
@@ -32,38 +39,38 @@ a {
 
 /* Навігація */
 
-.site-nav {
+.site-nav-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-
-    color: #212121;
 }
 
-.site-nav:hover {
+.site-nav-link:hover,
+.site-nav-link:focus {
     color: #2196F3;
 }
 
-.contact-head {
+.contact-head-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: #757575;
 }
 
-.contact-head:hover {
+.contact-head-link:hover,
+.contact-head-link:focus {
     color: #2196F3;
 }
 
-/* Шапка */
+/* Головна */
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
   
     text-align: center;
     letter-spacing: 0.06em;
@@ -75,7 +82,7 @@ a {
 .hero-button {
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     
     display: flex;
     align-items: center;
@@ -84,6 +91,8 @@ a {
 
     color: #FFFFFF;
     background-color: #2196F3;
+
+    cursor: pointer;
 }
 
 /* Особливості */
@@ -91,27 +100,23 @@ a {
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: #212121;
 }
 
 .features .title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-    color: #212121;
 }
 
 .features .text {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     letter-spacing: 0.03em;
 
@@ -123,18 +128,16 @@ a {
 .team-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
 
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: #212121;
 }
 
 .team-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -144,26 +147,75 @@ a {
 
 /* Підвал */
 
+footer {
+    background-color: #2F303A;
+}
+
 .logo-footer {
     color: #FFFFFF;
 }
 
 .address-text {
+    font-style:normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
 }
 
-.address-list {
+.address-list-link {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* Проєкти Портфоліо */
+
+/* Кнопки */
+
+.portfolio-button .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background-color: #F5F4FA;
+
+    cursor: pointer;
+}
+
+.portfolio-button .button:hover,
+.portfolio-button .button:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+/* Проєкти */
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+}
+
+.project-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
 }
