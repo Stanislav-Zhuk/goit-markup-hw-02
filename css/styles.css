@@ -1,8 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
     color: #212121;
-    background: #F5F5F5;;
+    background: #FFFFFF;
 }
 
 a {
@@ -27,8 +28,6 @@ header {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    
-    letter-spacing: 0.03em;
 
     color: #2196F3;
 }
@@ -41,9 +40,10 @@ header {
 
 .site-nav-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    color: #212121;
 }
 
 .site-nav-link:hover,
@@ -53,7 +53,6 @@ header {
 
 .contact-head-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
@@ -77,6 +76,7 @@ header {
     text-transform: uppercase;
 
     color: #FFFFFF;
+    background-color: #2F303A;
 }
 
 .hero-button {
@@ -95,30 +95,32 @@ header {
     cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
+}
+
 /* Особливості */
+
+.title-hidden {
+    display: none;
+}
 
 .section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .features .title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .features .text {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.7;
-
-    letter-spacing: 0.03em;
 
     color: #757575;
 }
@@ -131,16 +133,13 @@ header {
     line-height: 1.19;
 
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
 
     text-align: center;
-    letter-spacing: 0.03em;
 
     color: #757575;
 }
@@ -157,27 +156,28 @@ footer {
 
 .address-text {
     font-style:normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.7;
-
-    letter-spacing: 0.03em;
 
     color: #FFFFFF;
 }
 
 .address-list-link {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.7;
-
-    letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
 }
 
+.address-list-link:hover,
+.address-list-link:focus {
+    color: #2196F3;
+}
+
 /* Проєкти Портфоліо */
+
+.main-title {
+    display: none;
+}
 
 /* Кнопки */
 
@@ -187,7 +187,6 @@ footer {
     line-height: 1.6;
 
     text-align: center;
-    letter-spacing: 0.03em;
 
     background-color: #F5F4FA;
 
@@ -211,11 +210,8 @@ footer {
 }
 
 .project-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-
-    letter-spacing: 0.03em;
 
     color: #757575;
 }
