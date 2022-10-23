@@ -2,7 +2,12 @@
     --primari-text-color: #212121;
     --secondary-text-color: #757575;
     --primari-white-color: #FFFFFF;
+    --bgd-white-color: #F5F4FA;
     --accent-color: #2196F3;
+    --logo-black-color: #000000;
+    --hero-button-activ: #188CE8;
+    --bgd-color-footer: #2F303A;
+    --adress-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -40,7 +45,7 @@ header {
 }
 
 .logo-header {
-    color: #000000;
+    color: var(--logo-black-color);
 }
 
 /* Навігація */
@@ -50,7 +55,7 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: #212121;
+    color: var(--primari-text-color);
 }
 
 .site-nav-link:hover,
@@ -90,7 +95,7 @@ header {
     }
 
 .hero-button {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -105,7 +110,7 @@ header {
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #188CE8;
+    background-color: var(--hero-button-activ);
 }
 
 /* Особливості */
@@ -115,8 +120,17 @@ header {
     background-color: var(--primari-white-color);
 }
 
-.title-hidden {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .section-title {
@@ -142,7 +156,7 @@ header {
 /* Наша команда */
 
 .section-team {
-    background-color: #F5F4FA;
+    background-color: var(--bgd-white-color);
 }
 
 .team-members {
@@ -169,7 +183,7 @@ header {
 /* Підвал */
 
 footer {
-    background-color: #2F303A;
+    background-color: var(--bgd-color-footer);
 }
 
 .logo-footer {
@@ -187,7 +201,7 @@ footer {
     font-style: normal;
     line-height: 1.7;
 
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--adress-footer-color);
 }
 
 .address-list-link:hover,
@@ -201,20 +215,17 @@ footer {
     background-color: var(--primari-white-color);
 }
 
-.main-title {
-    display: none;
-}
-
 /* Кнопки */
 
 .portfolio-button .button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
 
     text-align: center;
 
-    background-color: #F5F4FA;
+    background-color: var(--bgd-white-color);
 
     cursor: pointer;
 }
