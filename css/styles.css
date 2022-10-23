@@ -24,6 +24,8 @@ a {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Шапка */
@@ -84,6 +86,9 @@ header {
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -95,6 +100,8 @@ header {
     }
 
 .hero-button {
+    display: inline-block;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -104,6 +111,9 @@ header {
 
     color: var(--primari-white-color);
     background-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 
     cursor: pointer;
 }
@@ -115,8 +125,18 @@ header {
 
 /* Особливості */
 
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin: 0 auto; */
+    border: 1px solid tomato;
+}
+
 .section-features,
 .section-work {
+    padding: 94px 215px;
+
     background-color: var(--primari-white-color);
 }
 
@@ -134,6 +154,9 @@ header {
 }
 
 .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -141,6 +164,9 @@ header {
 }
 
 .features .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -148,6 +174,9 @@ header {
 }
 
 .features .text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     line-height: 1.7;
 
     color: var(--secondary-text-color);
@@ -156,6 +185,8 @@ header {
 /* Наша команда */
 
 .section-team {
+    padding: 186px 215px 94px 215px;
+
     background-color: var(--bgd-white-color);
 }
 
@@ -164,6 +195,9 @@ header {
 }
 
 .team-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -172,6 +206,9 @@ header {
 }
 
 .team-text {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
 
