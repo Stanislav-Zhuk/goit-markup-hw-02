@@ -18,6 +18,8 @@ body {
 	background: var(--primari-white-color);
 }
 
+/* Утіліти */
+
 a {
 	text-decoration: none;
 }
@@ -42,6 +44,8 @@ p {
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
+
+	outline: 1px solid rebeccapurple;
 }
 
 /* Шапка */
@@ -53,6 +57,9 @@ header {
 /* Лого */
 
 .logo {
+	margin-right: 93px;
+	margin-left: auto;
+
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 700;
@@ -68,7 +75,22 @@ header {
 
 /* Навігація */
 
+.site-nav,
+.main-nav,
+.heder-nav {
+	display: flex;
+	align-items: center;
+}
+
+.site-nav .item:not(:last-child) {
+	margin-right: 50px;
+}
+
 .site-nav-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -81,7 +103,20 @@ header {
 	color: var(--accent-color);
 }
 
+/* Контакти хедер */
+
+.contact-head {
+	display: flex;
+	margin-left: auto;
+}
+
+.contact-head .item + .item {
+	margin-left: 50px;
+}
+
 .contact-head-link {
+	display: block;
+
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -144,11 +179,23 @@ header {
 
 /* Особливості */
 
+.features {
+	display: flex;
+}
+
+.features .item + .item {
+	margin-left: 30px;
+}
+
 .section-features,
 .section-work {
-	padding: 94px 215px;
+	padding-bottom: 94px;
 
 	background-color: var(--primari-white-color);
+}
+
+.section-features {
+	margin-top: 94px;
 }
 
 .visually-hidden {
@@ -190,10 +237,27 @@ header {
 	color: var(--secondary-text-color);
 }
 
+/* Робота */
+
+.work .item {
+	display: inline-block;
+}
+
+/* переробити! має бути 30px */
+
+.work .item + .item {
+	padding-left: 26px;
+}
+
 /* Наша команда */
 
+.team {
+	display: flex;
+}
+
 .section-team {
-	padding: 186px 215px 94px 215px;
+	padding-top: 94px;
+	padding-bottom: 94px;
 
 	background-color: var(--bgd-white-color);
 
@@ -201,7 +265,16 @@ header {
 }
 
 .team-members {
+	display: block;
+
 	background-color: var(--primari-white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.team-members + .team-members {
+	margin-left: 30px;
 }
 
 .team-title {
@@ -259,7 +332,6 @@ footer {
 /* Кнопки */
 
 .portfolio-button .button {
-	/* margin-top: 94px; */
 	margin-bottom: 50px;
 	margin-right: 8px;
 	padding: 6px 22px;
@@ -298,7 +370,7 @@ footer {
 
 	letter-spacing: 0.06em;
 
-    color: var(--primari-text-color);
+	color: var(--primari-text-color);
 }
 
 .project-text {
@@ -308,4 +380,13 @@ footer {
 	line-height: 1.87;
 
 	color: var(--secondary-text-color);
+}
+
+.card {
+	display: inline-block;
+
+	margin-right: 30px;
+	margin-bottom: 30px;
+
+	border: 1px solid #eeeeee;
 }
